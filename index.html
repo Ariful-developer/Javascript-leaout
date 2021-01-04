@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Javascript</title>
+  </head>
+
+  <body>
+     <!--my fitst js-->
+     <section style="text-align: center;">
+       <h2>My First JavaScript</h2>
+
+    <p id="demo"></p>
+
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    The time is</button>
+     </section>
+  
+    <!--image change-->
+    <section style="text-align: center;">
+       <h2>Images changes</h2>
+      <img src="images/dims3.png" id="images" alt="dims3.png" style="width:400px;">
+      <button type="button" onclick="document.getElementById('images').src='images/dims3.png'">1</button>
+      <button type="button" onclick="document.getElementById('images').src='images/banner-2 .jpg'">2</button>
+      <button type="button" onclick="document.getElementById('images').src='images/surface-laptop-.jpg'">3</button>
+      <button type="button" onclick="document.getElementById('images').src='images/surf-go-2.png'">4</button>
+    </section>
+    
+
+
+    <section  style="text-align: center;">
+        <h2>Turn on the light</h2>
+
+        <button onclick="document.getElementById('myImage').src='images/pic_bulbon.gif'">Turn on the light</button>
+
+        <img id="myImage" src="images/pic_bulboff.gif" style="width:100px">
+
+        <button onclick="document.getElementById('myImage').src='images/pic_bulboff.gif'">Turn off the light</button>
+    </section>
+
+
+<!--fontsize-->
+<section style="text-align: center;">
+<h2>fontsize</h2>
+
+<p id="font">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('font').style.fontSize='50px'">Click Me!</button>
+</section>
+
+
+
+<!--Paragraph changed-->
+<section style="text-align: center;">
+  <h2> Head</h2>
+
+<p id="para" style="font-Size:25px;">My Name Is</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+<script>
+    function myFunction() {
+      document.getElementById("para").innerHTML = "Ariful Islam.";
+    }
+</script>
+</section>
+
+
+<!--Functions-->
+<section style="text-align: center;">
+  <h2> Objects</h2>
+
+<p id="person" style="font-size:25px;"></p>
+
+<script>
+// Create an object:
+var person = {
+  firstName: "Ariful",
+  lastName: "Islam",
+  age: 28,
+  eyeColor: "blue"
+};
+
+// Display some data from the object:
+document.getElementById("person").innerHTML =
+person.firstName+ " " + person.lastName+ " is " + person.age + " years .";
+</script>
+</section>
+
+  
+
+<!--output-->
+<section style="text-align: center;">
+  <h2>Output</h2>
+<p id="adding"></p>
+
+<script>
+document.getElementById("adding").innerHTML = 10*10 +20-30;
+</script>
+</section>
+
+
+<!--statements-->
+<section style="text-align: center;">
+  <h2>Statements</h2>
+    <p id="demo1"></p>
+
+    <script>
+    var a, b, c, d;
+    a = 10;
+    b = 10;
+    c = 10;
+    d = a + b + c;
+    document.getElementById("demo1").innerHTML = d;
+    </script>
+</section>
+
+
+<!--operators-->
+<section style="text-align: center;">
+  <h2> Operator</h2>
+
+<p id="String+Number"></p>
+
+<script>
+var x = 5 + 5;
+  var y = "5" + 5;
+  var z = "Hello" + 5;
+  document.getElementById("String+Number").innerHTML =
+  x + "<br>" + y + "<br>" + z;
+</script>
+</section>
+
+<!--Functions-->
+<section style="text-align: center;">
+  <h2> Functions</h2>
+
+<p id="func"></p>
+
+<script>
+document.getElementById("func").innerHTML =
+"The temperature is " + toCelsius(50.78) + " Celsius";
+
+function toCelsius(fahrenheit) {
+  return (10/5) * (fahrenheit-32);
+} 
+</script>
+</section>
+
+
+   
+
+
+   
+   
+  </body>
+</html>

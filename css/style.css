@@ -1,0 +1,15 @@
+
+
+h2{
+	background-color: gray;
+	text-align: center;
+	font-size: 30px;
+}
+
+button{
+	padding: 10px 15px;
+	font-size: 15px;
+	color:blue;
+	border: none;
+	border-radius: 20px;
+}
